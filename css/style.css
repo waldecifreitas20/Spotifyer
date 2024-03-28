@@ -1,0 +1,147 @@
+:root {
+    --purple: rgb(121, 0, 202);
+    --purple-dark: rgb(98, 2, 122);
+    --aqua: rgb(65, 247, 238);
+
+    --pink:  rgb(255, 0, 106);
+}
+
+.vertical-divider {
+    border-left: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+.pill {
+    border-radius: 1em;
+}
+
+.btn-purple {
+    background-color: var(--purple);
+    color: white;
+    transition: 200ms;
+}
+
+.btn-purple:hover {
+    color: white;
+    background-color: var(--purple-dark);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.text-purple {
+    color: var(--purple);
+}
+.text-aqua {
+    color: var(--aqua);
+}
+
+.rotate {
+    transform: rotate(30deg);
+}
+
+
+h1 {
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+}
+
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h6 {
+    font-size: .9em;
+}
+
+
+body {
+    background:
+        url("../images/ruido.png"),
+        url("../images/capa.png"),
+        linear-gradient(50deg, var(--pink), var(--purple));
+
+    background-attachment: fixed;
+
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+header nav.navbar .navbar-nav .nav-link, footer a {
+    color: white;
+}
+
+header nav.navbar .navbar-nav .nav-link:hover, 
+footer a:hover {
+    color: rgb(48, 185, 248);
+    text-decoration: none;
+}
+
+section#top-section {
+    height: 100vh;
+
+}
+
+
+footer {
+    position: relative;
+    background: black;
+    
+}
+article#socials a {
+    border: 3px solid transparent;
+    border-radius: 100%;
+    height: fit-content;
+    width: fit-content;
+
+    transition: 200ms;
+}
+
+article#socials a:hover {
+    border: 3px solid gray;
+    scale: 1.07;
+}
+
+article#socials a:active {
+    scale: .98;
+    opacity: .85;
+}
+
+
+@media (min-width: 576px) {
+    section#top-section h1 {
+        font-size: 3.0em;
+    }
+}
+
+@media (min-width: 768px) {
+    section#top-section h1 {
+        font-size: 4.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    section#top-section h1 {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    section#top-section h1 {
+        font-size: 6em;
+    }
+}
